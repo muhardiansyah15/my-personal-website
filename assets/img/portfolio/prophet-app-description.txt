@@ -1,0 +1,4 @@
+📊 Prophet Forecasting App
+🔮 Time Series Forecasting Tool
+⚡ React + FastAPI + Facebook Prophet
+📈 Interactive Charts & Predictions
