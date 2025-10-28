@@ -1,0 +1,145 @@
+/* EMERGENCY FIX FOR BLANK PAGES */
+
+/* Force all text to be visible */
+* {
+  color: white !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Specific fixes for common elements */
+h1, h2, h3, h4, h5, h6, p, div, span, a, li, td, th {
+  color: white !important;
+  background: transparent !important;
+}
+
+/* Ensure body has proper background */
+body {
+  background: #0f172a !important;
+  color: white !important;
+}
+
+/* Make sections visible */
+section, main, .main {
+  background: transparent !important;
+  min-height: auto !important;
+  display: block !important;
+}
+
+/* Specific fixes for page title and breadcrumbs */
+.page-title {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%) !important;
+  padding: 80px 0 40px 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  margin-top: 70px !important; /* Account for fixed header */
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+
+.page-title .heading {
+  margin-bottom: 0 !important;
+}
+
+.page-title h1 {
+  color: white !important;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.page-title p {
+  color: #cbd5e1 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+.breadcrumbs {
+  background: rgba(30, 41, 59, 0.9) !important;
+  padding: 20px 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.3) !important;
+}
+
+.breadcrumbs .container {
+  display: block !important;
+}
+
+.breadcrumbs ol {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+.breadcrumbs ol li {
+  color: #cbd5e1 !important;
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.breadcrumbs ol li a {
+  color: #3b82f6 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+}
+
+.breadcrumbs ol li a:hover {
+  color: #60a5fa !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+}
+
+.breadcrumbs ol li.current {
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 5px 10px !important;
+}
+
+.breadcrumbs ol li::after {
+  content: "/" !important;
+  margin: 0 8px !important;
+  color: #64748b !important;
+  font-size: 0.9rem !important;
+}
+
+.breadcrumbs ol li:last-child::after {
+  display: none !important;
+}
+
+/* Mobile responsiveness for page titles */
+@media (max-width: 768px) {
+  .page-title {
+    padding: 60px 0 30px 0 !important;
+    margin-top: 60px !important;
+  }
+  
+  .page-title h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .page-title p {
+    font-size: 1rem !important;
+    padding: 0 15px !important;
+  }
+  
+  .breadcrumbs ol {
+    justify-content: flex-start !important;
+    padding: 0 15px !important;
+  }
+}
