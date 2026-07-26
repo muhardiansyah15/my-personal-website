@@ -1,30 +1,40 @@
-# Muhardiansyah Website - Muhardiansyah
+# muhardiansyah.dev — Personal Website
 
-Welcome to my personal website repository! This site is a digital reflection of who I am — my work, my experiences, and what I'm passionate about.
+My personal portfolio: Software Engineer × Mathematics graduate.
+Hand-built single-page site with a dark, futuristic design — no CSS framework, no template.
 
-## 🚀 About This Website
+**Live:** https://muhardiansyah15.github.io/my-personal-website
 
-This website was built to:
+## Features
 
-- Share my professional journey and experiences
-- Showcase selected projects and achievements
-- Provide a way to connect with me
+- Custom canvas **graph-network animation** — edges light up in rainbow colors near the cursor, a nod to my research on rainbow connection numbers in graph theory
+- Terminal-style hero card, typing effect, scroll-reveal animations, animated counters
+- Sections: hero, stats, about, skills, experience timeline, services, filterable portfolio, publications, contact
+- Zero JS/CSS dependencies (only Bootstrap Icons for iconography)
+- Respects `prefers-reduced-motion`; responsive down to mobile
 
-It's designed to be clean, fast, and responsive across all devices.
+## Structure
 
-## 🛠️ Built With
+```
+├── index.html                        # The entire site (single page)
+├── prophet-forecasting-details.html  # Case study: Prophet Forecasting App
+├── about|resume|services|portfolio|
+│   publication|contact|*-details.html  # Redirect stubs → index.html#section (keep old links alive)
+├── assets/
+│   ├── css/theme.css                 # Design system (custom, dependency-free)
+│   ├── js/theme.js                   # Canvas animation, typing, reveal, filter, nav
+│   ├── img/                          # Profile + portfolio images
+│   └── vendor/bootstrap-icons/       # Icon font (only remaining vendor lib)
+└── doc/                              # Resume PDFs, published paper
+```
 
-- HTML5 / CSS3 / JavaScript
-- [Framework/Library, e.g., React / Vue / Next.js / Astro]
-- [Other tools you used, e.g., Tailwind CSS, Netlify, GitHub Pages]
+## Development
 
-## 📁 Folder Structure
+No build step. Serve the folder and open it:
 
 ```bash
-├── public/         # Static assets
-├── src/            # Source code
-│   ├── components/ # Reusable UI components
-│   ├── pages/      # Pages of the website
-│   └── ...
-├── README.md
-└── ...
+python3 -m http.server 8000
+# → http://localhost:8000
+```
+
+Deployed via GitHub Pages from the `main` branch.
