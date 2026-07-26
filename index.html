@@ -4,10 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Muhardiansyah</title>
+  <title>Muhardiansyah — Software Engineer &amp; Mathematician</title>
   <meta name="google-site-verification" content="-Ad-Yq_GItxPekQgWbWHZ87SWYyzyz5ivoBAHIJ4-_M">
-  <meta name="description" content="Welcome to my personal website, a space where I share my expertise and passion for software engineering, data science, and technology. Here, you'll find information about my projects including the Prophet Forecasting App for time series analysis, research, and professional journey, along with insights into topics like ERP systems, machine learning, and graph theory. This website serves as a hub to connect with like-minded professionals and showcase my contributions to the tech community.">
-  <meta name="keywords" content="portfolio, Muhardiansyah, Muhardiansyah Muhardiansyah, web developer, desain, teknologi, software engineer, data science, forecasting, Prophet, time series, Odoo ERP, machine learning, graph theory, publications, contact, bion, binarytechs">
+  <meta name="description" content="Muhardiansyah — Software Engineer and Mathematics graduate. Odoo ERP specialist, full-stack developer, and data science enthusiast. Explore my projects including the Prophet Forecasting App, research publications on graph theory, and professional journey.">
+  <meta name="keywords" content="Muhardiansyah, software engineer, mathematics, Odoo ERP, data science, forecasting, Prophet, time series, machine learning, graph theory, rainbow connection, portfolio">
+  <meta property="og:title" content="Muhardiansyah — Software Engineer & Mathematician">
+  <meta property="og:description" content="Odoo ERP specialist, full-stack developer, and data science enthusiast building data-driven software solutions.">
+  <meta property="og:type" content="website">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -16,131 +19,572 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Muhardiansyah
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: Muhardiansyah
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Theme -->
+  <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 
-	<body class="index-page">
+<body>
 
-		<header id="header" class="header d-flex align-items-center fixed-top">
-			<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <div class="bg-grid"></div>
+  <div class="bg-glow one"></div>
+  <div class="bg-glow two"></div>
+  <canvas id="graph-canvas" aria-hidden="true"></canvas>
 
-			<a href="index.html" class="logo d-flex align-items-center">
-				<img src="assets/img/logo.png" alt="">
-				<h1 class="sitename">Muhardiansyah</h1>
-			</a>
+  <header class="site-header">
+    <div class="container">
+      <a href="#home" class="logo"><span class="bracket">&lt;</span>muhardiansyah<span class="dot">.</span>dev<span class="bracket">/&gt;</span></a>
 
-			<nav id="navmenu" class="navmenu">
-				<ul>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="publication.html">Publications</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				</ul>
-				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-			</nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-			</div>
-		</header>
+      <ul class="nav-links">
+        <li><a href="#home" class="active"><span class="nav-idx">01.</span>Home</a></li>
+        <li><a href="#about"><span class="nav-idx">02.</span>About</a></li>
+        <li><a href="#skills"><span class="nav-idx">03.</span>Skills</a></li>
+        <li><a href="#experience"><span class="nav-idx">04.</span>Experience</a></li>
+        <li><a href="#portfolio"><span class="nav-idx">05.</span>Portfolio</a></li>
+        <li><a href="#publications"><span class="nav-idx">06.</span>Research</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-		<main class="main">
+  <main>
 
-			<!-- Hero Section -->
-			<section id="hero" class="hero section dark-background">
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-kicker"><span class="pulse"></span>open to opportunities · Tangerang, ID (UTC+7)</span>
+          <h1>Muhardian<wbr>syah<span class="grad-text">.</span><br><span class="grad-text">Engineer × Mathematician</span></h1>
+          <p class="typed-line"><span class="prompt">λ&gt;</span> <span id="typed" data-items='["Software Engineer","Odoo ERP Specialist","Mathematics Graduate","Data Science Enthusiast","Full-Stack Developer"]'></span><span class="typed-cursor">|</span></p>
+          <p class="hero-desc">
+            I design and build data-driven software — from enterprise ERP systems to
+            machine-learning forecasting apps — grounded in 5+ years of engineering
+            experience and a formal background in mathematics and graph theory.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary"><i class="bi bi-rocket-takeoff"></i> View My Work</a>
+            <a href="doc/Muhardiansyah-resume.pdf" target="_blank" class="btn btn-ghost"><i class="bi bi-file-earmark-arrow-down"></i> Resume</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.researchgate.net/profile/Muhardiansyah-Muhardiansyah" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="bi bi-mortarboard"></i></a>
+            <a href="https://twitter.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com/muhardiansyah15/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://strava.com/athletes/185882854" target="_blank" rel="noopener" aria-label="Strava"><i class="bi bi-activity"></i></a>
+          </div>
+        </div>
 
-			<img src="assets/img/hero-bg.png" alt="" data-aos="fade-in">
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
+            <span class="t-title">muhardiansyah.py — ~/portfolio</span>
+          </div>
+          <div class="terminal-body">
+            <span class="c-cm"># A short proof of who I am</span><br>
+            <span class="c-kw">class</span> <span class="c-fn">Muhardiansyah</span>(<span class="c-fn">Engineer</span>, <span class="c-fn">Mathematician</span>):<br>
+            &nbsp;&nbsp;<span class="c-var">degree</span> = <span class="c-str">"B.Sc. Mathematics"</span><br>
+            &nbsp;&nbsp;<span class="c-var">stack</span> = [<span class="c-str">"Python"</span>, <span class="c-str">"Odoo"</span>, <span class="c-str">"PostgreSQL"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"React"</span>, <span class="c-str">"FastAPI"</span>, <span class="c-str">"Prophet"</span>]<br>
+            &nbsp;&nbsp;<span class="c-var">research</span> = <span class="c-str">"rainbow connection rc(G)"</span><br><br>
+            &nbsp;&nbsp;<span class="c-kw">def</span> <span class="c-fn">solve</span>(<span class="c-var">self</span>, problem):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">while not</span> problem.solved:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.<span class="c-fn">learn</span>() ; <span class="c-var">self</span>.<span class="c-fn">iterate</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">return</span> elegant_solution<br><br>
+            <span class="c-cm"># ∀ problem ∃ solution — Q.E.D. ∎</span>
+          </div>
+        </div>
+      </div>
 
-			<div class="container" data-aos="zoom-out" data-aos-delay="100">
-				<h2>Muhardiansyah</h2>
-				<p>I'm <span class="typed" data-typed-items="a Software Engineer, a Mathematics Graduate, a Data Science Enthusiast."></span><span class="typed-cursor typed-cursor--blink"></span></p>
-				<div class="social-links">
-				<a href="https://twitter.com/muhardiansyah97" target="_blank"><i class="bi bi-twitter-x"></i></a>
-				<a href="https://www.facebook.com/muhardiansyah97" target="_blank"><i class="bi bi-facebook"></i></a>
-				<a href="https://www.instagram.com/muhardiansyah15/" target="_blank"><i class="bi bi-instagram"></i></a>
-				<a href="https://github.com/muhardiansyah15" target="_blank"><i class="bi bi-github"></i></a>
-				<a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank"><i class="bi bi-linkedin"></i></a>
-				</div>
-				<h5 class="py-4 mt-1">
-				<a href="about.html" class="btn-secondary">About Me <i class="bi bi-box-arrow-right"></i></a>
-				</h5>
-			</div>
+      <div class="scroll-hint"><span>scroll</span><span class="line"></span></div>
+    </section>
 
-			</section>
+    <!-- ============ Stats ============ -->
+    <section class="stats-strip" aria-label="Highlights">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal"><div class="num"><span data-count="5">0</span><span class="unit">+</span></div><div class="lbl">Years of engineering experience</div></div>
+          <div class="stat-card reveal" data-delay="1"><div class="num"><span data-count="2">0</span></div><div class="lbl">Published research papers</div></div>
+          <div class="stat-card reveal" data-delay="2"><div class="num"><span data-count="637">0</span><span class="unit">+</span></div><div class="lbl">Research reads on ResearchGate</div></div>
+          <div class="stat-card reveal" data-delay="3"><div class="num"><span data-count="9.9">0</span></div><div class="lbl">Research Interest Score</div></div>
+        </div>
+      </div>
+    </section>
 
-		</main>
+    <!-- ============ About ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 02 · about</div>
+          <h2>From theorems to <span class="grad-text">production systems</span></h2>
+        </div>
 
-		<footer id="footer" class="footer dark-background">
-			<div class="container">
-				<h5 class="sitename">Muhardiansyah</h5>
-				<p>Software Engineer | Odoo ERP Specialist | Data Science Enthusiast</p>
-				<div class="social-links d-flex justify-content-center">
-					<a href="https://twitter.com/muhardiansyah97" target="_blank"><i class="bi bi-twitter-x"></i></a>
-					<a href="https://www.facebook.com/muhardiansyah97" target="_blank"><i class="bi bi-facebook"></i></a>
-					<a href="https://www.instagram.com/muhardiansyah15/" target="_blank"><i class="bi bi-instagram"></i></a>
-					<a href="https://github.com/muhardiansyah15" target="_blank"><i class="bi bi-github"></i></a>
-					<a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank"><i class="bi bi-linkedin"></i></a>
-					
-				</div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/img/profile-img.jpeg" alt="Portrait of Muhardiansyah">
+            <span class="badge-eq">rc(G) <span class="op">≤</span> diam(G) + ε</span>
+          </div>
 
-				<div class="d-flex justify-content-center mb-3">
-					<a style="display:inline-block;background-color:#878686;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href="https://strava.com/athletes/185882854" target="_clean">
-						Follow me on
-						<img src="https://badges.strava.com/logo-strava.png" alt="Strava" style="margin-left:2px;vertical-align:text-bottom" height="13" width="51">
-					</a>
-				</div>
+          <div class="about-text reveal" data-delay="1">
+            <p>
+              I'm a <strong>Software Engineer</strong> with a <strong>Bachelor of Science in Mathematics</strong>
+              from Universitas Andalas. For over five years in software-house environments I've specialized in
+              <strong>ERP development with the Odoo framework</strong> — leading module design, data migration,
+              multi-database server management, and end-to-end implementations that streamline real business workflows.
+            </p>
+            <p>
+              My backend core is <strong>Python and PostgreSQL</strong>, complemented by modern web development with
+              JavaScript, React, and FastAPI. On the data side, I build <strong>sales-forecasting and analytics
+              applications</strong>, applying statistical models and machine learning to turn raw numbers into
+              actionable business insight.
+            </p>
+            <p>
+              The mathematician in me never left: I've published research on <strong>rainbow connection numbers in
+              graph theory</strong>, and I bring that same rigor — decompose, prove, optimize — to every engineering
+              problem. Originally from Sungai Limau, West Sumatra; currently building things in Tangerang, Banten.
+            </p>
 
-				<div class="container">
-					<div class="copyright">
-						<span>Copyright</span> &copy; 2023-<script>document.write(new Date().getFullYear())</script> <strong class="px-1 sitename">Muhardiansyah</strong>. <span>All Rights Reserved.</span>
-					</div>
-					<div class="credits">
-						Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+            <div class="fact-grid">
+              <div class="fact"><span class="k">Degree</span><span class="v">B.Sc. Mathematics</span></div>
+              <div class="fact"><span class="k">Alma mater</span><span class="v"><a href="https://www.unand.ac.id/" target="_blank" rel="noopener">Universitas Andalas</a></span></div>
+              <div class="fact"><span class="k">Current role</span><span class="v">Software Engineer @ <a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a></span></div>
+              <div class="fact"><span class="k">Base</span><span class="v">Tangerang, Banten, Indonesia</span></div>
+              <div class="fact"><span class="k">Focus</span><span class="v">ERP · Data Science · Web</span></div>
+              <div class="fact"><span class="k">Research</span><span class="v">Graph Theory · Combinatorics</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Scroll Top -->
-		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 03 · skills</div>
+          <h2>Tech <span class="grad-text">arsenal</span></h2>
+          <p class="sub">The tools I reach for daily — from backend cores and ERP internals to statistical modeling.</p>
+        </div>
 
-		<!-- Preloader -->
-		<div id="preloader"></div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="icon" style="background: linear-gradient(135deg, #22d3ee, #0ea5e9);"><i class="bi bi-braces"></i></div>
+            <h3>Backend Engineering</h3>
+            <span class="lvl">// primary weapon</span>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">FastAPI</span>
+              <span class="chip">Django</span><span class="chip">REST API</span>
+            </div>
+          </div>
 
-		<!-- Vendor JS Files -->
-		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/vendor/php-email-form/validate.js"></script>
-		<script src="assets/vendor/aos/aos.js"></script>
-		<script src="assets/vendor/typed.js/typed.umd.js"></script>
-		<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-		<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-		<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+          <div class="skill-card reveal" data-delay="1">
+            <div class="icon" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);"><i class="bi bi-kanban"></i></div>
+            <h3>ERP &amp; Odoo</h3>
+            <span class="lvl">// 5+ years deep</span>
+            <div class="chip-row">
+              <span class="chip">Odoo Framework</span><span class="chip">Sales</span><span class="chip">Inventory</span>
+              <span class="chip">Accounting</span><span class="chip">HR</span><span class="chip">Manufacturing</span>
+            </div>
+          </div>
 
-		<!-- Main JS File -->
-		<script src="assets/js/main.js"></script>
+          <div class="skill-card reveal" data-delay="2">
+            <div class="icon" style="background: linear-gradient(135deg, #e879f9, #c026d3);"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>Data Science &amp; ML</h3>
+            <span class="lvl">// forecasting focus</span>
+            <div class="chip-row">
+              <span class="chip">Prophet</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span>
+              <span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">R</span><span class="chip">MATLAB</span>
+            </div>
+          </div>
 
-	</body>
+          <div class="skill-card reveal">
+            <div class="icon" style="background: linear-gradient(135deg, #a3e635, #65a30d);"><i class="bi bi-window-stack"></i></div>
+            <h3>Frontend Development</h3>
+            <span class="lvl">// user-facing craft</span>
+            <div class="chip-row">
+              <span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">TypeScript</span>
+              <span class="chip">Node.js</span><span class="chip">HTML/CSS</span><span class="chip">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal" data-delay="1">
+            <div class="icon" style="background: linear-gradient(135deg, #fbbf24, #f97316);"><i class="bi bi-hdd-network"></i></div>
+            <h3>DevOps &amp; Infrastructure</h3>
+            <span class="lvl">// ship &amp; scale</span>
+            <div class="chip-row">
+              <span class="chip">Linux</span><span class="chip">NGINX</span><span class="chip">Git / GitHub</span>
+              <span class="chip">VPS Hosting</span><span class="chip">GitHub Actions</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal" data-delay="2">
+            <div class="icon" style="background: linear-gradient(135deg, #fb7185, #e11d48);"><i class="bi bi-diagram-3"></i></div>
+            <h3>Mathematics</h3>
+            <span class="lvl">// the foundation</span>
+            <div class="chip-row">
+              <span class="chip">Graph Theory</span><span class="chip">Combinatorics</span><span class="chip">Numerical Methods</span>
+              <span class="chip">Computational Statistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 04 · experience</div>
+          <h2>The <span class="grad-text">trajectory</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="period">2024 — present</span>
+            <h3>Mid-Level Software Engineer</h3>
+            <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
+            <ul>
+              <li>Lead design, development, and testing of Odoo modules</li>
+              <li>Delegate tasks and mentor a 2-member development team</li>
+              <li>Manage cloud platforms and server infrastructure for scalable, reliable deployments</li>
+              <li>Operate multi-database Odoo environments and deliver L1–L3 technical support</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <span class="period">2023 — 2024</span>
+            <h3>Odoo Developer</h3>
+            <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
+            <ul>
+              <li>Designed, developed, and tested Odoo modules and new functionalities</li>
+              <li>Performed data migration, configuration, and multi-database server management</li>
+              <li>Delivered client-tailored solutions with comprehensive documentation</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <span class="period">2021 — 2023</span>
+            <h3>Software Engineer</h3>
+            <p class="org">PT Tigernix Solutions Indonesia (<a href="https://tigernix.com/" target="_blank" rel="noopener">Tigernix</a>) · Batam, Kepulauan Riau</p>
+            <ul>
+              <li>Built and tested Odoo modules; handled data migration and configuration</li>
+              <li>Managed cloud infrastructure and multi-database Odoo deployments</li>
+              <li>Provided multi-level (L1–L3) technical support for enterprise clients</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <span class="period">2019 — 2021</span>
+            <h3>Software Engineer</h3>
+            <p class="org">PT Intek Karya · Batam, Kepulauan Riau</p>
+            <ul>
+              <li>Started the ERP journey: Odoo module development, server setup, and client support</li>
+            </ul>
+          </div>
+
+          <div class="tl-item reveal">
+            <span class="period">2015 — 2019</span>
+            <h3>B.Sc. Mathematics</h3>
+            <p class="org">Universitas Andalas · Padang, West Sumatra</p>
+            <ul>
+              <li>Computer lab assistant; strong grades in computational statistics, programming, and numerical methods</li>
+              <li>Proficient in MATLAB and R statistical software</li>
+            </ul>
+            <div class="thesis">
+              <span class="mono">thesis :=</span> Rainbow Connection of the Amalgamation of Homogeneous Generalized Triangle-Ladder Graphs
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Services ============ -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 05 · services</div>
+          <h2>What I can <span class="grad-text">build for you</span></h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal" data-idx="01">
+            <span class="icon">⚙️</span>
+            <h3>Odoo Implementation &amp; Customization</h3>
+            <p>End-to-end ERP implementation and bespoke module development tailored to your business workflows.</p>
+          </div>
+          <div class="service-card reveal" data-delay="1" data-idx="02">
+            <span class="icon">🔗</span>
+            <h3>Odoo Integration</h3>
+            <p>Connect Odoo with third-party services, APIs, and legacy systems for a seamless data flow.</p>
+          </div>
+          <div class="service-card reveal" data-delay="2" data-idx="03">
+            <span class="icon">🚀</span>
+            <h3>Odoo Version Upgrades</h3>
+            <p>Safe migrations to newer Odoo versions — data, customizations, and downtime kept under control.</p>
+          </div>
+          <div class="service-card reveal" data-idx="04">
+            <span class="icon">🛠️</span>
+            <h3>Bug Fixing &amp; Technical Support</h3>
+            <p>Multi-level (L1–L3) support and rapid debugging to keep your systems running smoothly.</p>
+          </div>
+          <div class="service-card reveal" data-delay="1" data-idx="05">
+            <span class="icon">⚡</span>
+            <h3>Performance Optimization</h3>
+            <p>Profiling and tuning of Odoo instances, databases, and servers for faster, leaner operations.</p>
+          </div>
+          <div class="service-card reveal" data-delay="2" data-idx="06">
+            <span class="icon">📈</span>
+            <h3>Sales Forecast Analysis</h3>
+            <p>Time-series forecasting with Prophet and statistical models that turn history into future insight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Portfolio ============ -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 06 · portfolio</div>
+          <h2>Selected <span class="grad-text">work</span></h2>
+          <p class="sub">Apps, experiments, and creative work — where engineering meets curiosity.</p>
+        </div>
+
+        <div class="filter-row reveal">
+          <button class="filter-btn active" data-filter="*">all()</button>
+          <button class="filter-btn" data-filter="app">.apps</button>
+          <button class="filter-btn" data-filter="art">.art</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal" data-cat="app">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/prophet-thumb.svg" alt="Prophet Forecasting App — forecast chart illustration" loading="lazy">
+              <span class="cat-tag">featured · ML</span>
+            </div>
+            <div class="project-body">
+              <h3>Prophet Forecasting App</h3>
+              <p>Full-stack time-series forecasting platform: upload Excel data, tune seasonality and trend parameters, and get interactive predictions with MAE/RMSE/MAPE accuracy metrics.</p>
+              <div class="project-tech">
+                <span class="chip">React + TS</span><span class="chip">FastAPI</span><span class="chip">Prophet</span><span class="chip">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="prophet-forecasting-details.html"><i class="bi bi-arrow-right-circle"></i> Case study</a>
+                <a href="https://muhardiansyah15.github.io/prophet-forecasting-app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live demo</a>
+                <a href="https://github.com/muhardiansyah15/prophet-forecasting-app" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-cat="app" data-delay="1">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/app-1.png" alt="My Spotify Stats dashboard" loading="lazy">
+              <span class="cat-tag">web app</span>
+            </div>
+            <div class="project-body">
+              <h3>My Spotify Stats</h3>
+              <p>Personalized listening analytics — top genres, songs, and artists rendered from your Spotify history.</p>
+              <div class="project-tech">
+                <span class="chip">JavaScript</span><span class="chip">Spotify API</span><span class="chip">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://muhardiansyah15.github.io/my-spotify-stats/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+                <a href="https://github.com/muhardiansyah15/my-spotify-stats" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-cat="app">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/app-2.jpeg" alt="The Guessing Name Game" loading="lazy">
+              <span class="cat-tag">game</span>
+            </div>
+            <div class="project-body">
+              <h3>The Guessing Name Game</h3>
+              <p>An interactive guessing game: you give the clue, the system deduces the name. Built for fun with React.</p>
+              <div class="project-tech">
+                <span class="chip">React</span><span class="chip">Vite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://muhardiansyah15.github.io/guessing-game-reactjs/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Play</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-cat="app" data-delay="1">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/my-website.jpg" alt="Personal website screenshot" loading="lazy">
+              <span class="cat-tag">web</span>
+            </div>
+            <div class="project-body">
+              <h3>This Website</h3>
+              <p>Hand-built portfolio — no frameworks, no template. Custom canvas graph animation as a nod to graph theory.</p>
+              <div class="project-tech">
+                <span class="chip">HTML/CSS</span><span class="chip">Vanilla JS</span><span class="chip">Canvas</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/muhardiansyah15/my-personal-website" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-cat="art">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/gallery-4.jpeg" alt="Black and white scratch art self-portrait" loading="lazy">
+              <span class="cat-tag">art</span>
+            </div>
+            <div class="project-body">
+              <h3>Scratch Art Portrait</h3>
+              <p>Self-portrait in black and white — an exercise in light, shadow, and restraint with a limited palette.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-cat="art" data-delay="1">
+            <div class="project-thumb">
+              <img src="assets/img/portfolio/gallery-1.jpeg" alt="Digital art portrait" loading="lazy">
+              <span class="cat-tag">art</span>
+            </div>
+            <div class="project-body">
+              <h3>Digital Portraits</h3>
+              <p>A small series of digital art portraits exploring color and character.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Publications ============ -->
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 07 · research</div>
+          <h2>Published <span class="grad-text">mathematics</span></h2>
+          <p class="sub">Peer-reviewed work on rainbow connection numbers — coloring the edges of graphs so every pair of vertices is joined by a rainbow path.</p>
+        </div>
+
+        <div class="pub-intro-stats">
+          <div class="stat-card reveal"><div class="num"><span data-count="9.9">0</span></div><div class="lbl">Research Interest Score</div></div>
+          <div class="stat-card reveal" data-delay="1"><div class="num"><span data-count="637">0</span><span class="unit">+</span></div><div class="lbl">Reads</div></div>
+          <div class="stat-card reveal" data-delay="2"><div class="num"><span data-count="5">0</span></div><div class="lbl">Citations</div></div>
+          <div class="stat-card reveal" data-delay="3"><div class="num"><span data-count="2">0</span></div><div class="lbl">Publications</div></div>
+        </div>
+
+        <article class="pub-card reveal">
+          <div class="pub-eq">rc(G)</div>
+          <div>
+            <h3><a href="https://ejgta.org/index.php/ejgta/article/view/1488" target="_blank" rel="noopener">On the rainbow connection numbers of line, middle, and total graphs of wheels</a></h3>
+            <p class="authors">Lyra Yulianti, <b>Muhardiansyah</b>, Admi Nazra</p>
+            <p class="venue">Electronic Journal of Graph Theory and Applications 13 (1) (2025), 19–29</p>
+            <div class="pub-links">
+              <a href="https://ejgta.org/index.php/ejgta/article/view/1488" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> Read paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-card reveal" data-delay="1">
+          <div class="pub-eq">K₃-net</div>
+          <div>
+            <h3><a href="https://iopscience.iop.org/article/10.1088/1742-6596/1836/1/012004/meta" target="_blank" rel="noopener">On the rainbow connection number of triangle-net graph</a></h3>
+            <p class="authors">Lyra Yulianti, Admi Nazra, <b>Muhardiansyah</b>, Narwen</p>
+            <p class="venue">J. Phys.: Conf. Ser. 1836 012004 · ICCGANT 2020 · IOP Publishing</p>
+            <div class="pub-links">
+              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1836/1/012004/meta" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> Read paper</a>
+              <a href="doc/muhardiansyah-paper.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <p class="reveal" style="margin-top: 24px;">
+          <a href="https://www.researchgate.net/profile/Muhardiansyah-Muhardiansyah" target="_blank" rel="noopener" class="mono" style="font-size: 14px;">
+            → full profile on ResearchGate
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">§ 08 · contact</div>
+          <h2>Let's <span class="grad-text">connect</span></h2>
+          <p class="sub">Open to opportunities, collaborations, and interesting problems. Preferred channel: email.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <h3>Email</h3>
+              <a class="val" href="mailto:muhardiansyah97@gmail.com">muhardiansyah97@gmail.com</a>
+              <span class="meta">response_time ≈ 24h</span>
+            </div>
+          </div>
+          <div class="contact-card reveal" data-delay="1">
+            <div class="icon"><i class="bi bi-linkedin"></i></div>
+            <div>
+              <h3>LinkedIn</h3>
+              <a class="val" href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener">in/muhardiansyah15</a>
+              <span class="meta">response_time ≈ 48h</span>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="icon"><i class="bi bi-github"></i></div>
+            <div>
+              <h3>GitHub</h3>
+              <a class="val" href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">@muhardiansyah15</a>
+              <span class="meta">code &amp; experiments</span>
+            </div>
+          </div>
+          <div class="contact-card reveal" data-delay="1">
+            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <h3>Location</h3>
+              <p>Tangerang, Banten, Indonesia</p>
+              <span class="meta">timezone = WIB (UTC+7)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-banner reveal">
+          <h3>Have a problem worth <span class="grad-text">solving</span>?</h3>
+          <p>Whether it's an ERP that needs taming, data that needs forecasting, or an idea that needs shipping — let's talk.</p>
+          <a href="mailto:muhardiansyah97@gmail.com" class="btn btn-primary"><i class="bi bi-send"></i> Start a conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span class="bracket">&lt;</span>muhardiansyah<span class="dot">.</span>dev<span class="bracket">/&gt;</span></a>
+      <p class="tagline">Software Engineer · Odoo ERP Specialist · Data Science Enthusiast</p>
+      <div class="social-row">
+        <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/muhardiansyah15/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://strava.com/athletes/185882854" target="_blank" rel="noopener" aria-label="Strava"><i class="bi bi-activity"></i></a>
+      </div>
+      <p class="footer-eq">∀ problem ∃ solution : <span class="hl">solve(problem) → elegant</span></p>
+      <p class="copyright">
+        © 2023–<span id="year"></span> Muhardiansyah. All rights reserved.
+        <span class="built">designed &amp; built from scratch — no template</span>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#home" id="scroll-top" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/js/theme.js"></script>
+</body>
 
 </html>
