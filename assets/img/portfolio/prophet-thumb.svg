@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="'JetBrains Mono', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1022"/>
+      <stop offset="1" stop-color="#141031"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="470" fill="url(#bg)"/>
+
+  <!-- grid -->
+  <g stroke="#94a3d8" stroke-opacity="0.08">
+    <path d="M0 100H800M0 180H800M0 260H800M0 340H800M0 420H800"/>
+    <path d="M100 60V470M200 60V470M300 60V470M400 60V470M500 60V470M600 60V470M700 60V470"/>
+  </g>
+
+  <!-- title bar -->
+  <circle cx="28" cy="30" r="6" fill="#fb7185"/>
+  <circle cx="50" cy="30" r="6" fill="#fbbf24"/>
+  <circle cx="72" cy="30" r="6" fill="#34d399"/>
+  <text x="400" y="36" text-anchor="middle" fill="#9aa5c4" font-size="16">prophet_forecast.py — y = g(t) + s(t) + h(t) + ε</text>
+
+  <!-- forecast split marker -->
+  <line x1="500" y1="70" x2="500" y2="450" stroke="#e879f9" stroke-opacity="0.5" stroke-dasharray="5 6"/>
+  <text x="510" y="92" fill="#e879f9" font-size="14">forecast →</text>
+
+  <!-- confidence band (future) -->
+  <path d="M500 240 C 560 200, 620 220, 680 180 S 780 130, 800 120 L 800 320 C 740 330, 660 320, 600 330 S 520 310, 500 300 Z" fill="url(#band)"/>
+
+  <!-- historical line -->
+  <path d="M40 380 C 90 360, 120 320, 160 330 S 230 380, 270 350 S 330 260, 380 280 S 460 290, 500 265"
+        fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- forecast line -->
+  <path d="M500 265 C 560 235, 620 250, 680 210 S 770 175, 800 165"
+        fill="none" stroke="#e879f9" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+
+  <!-- data points -->
+  <g fill="#22d3ee">
+    <circle cx="160" cy="330" r="5"/>
+    <circle cx="270" cy="350" r="5"/>
+    <circle cx="380" cy="280" r="5"/>
+    <circle cx="500" cy="265" r="6" fill="#e879f9"/>
+  </g>
+
+  <!-- legend -->
+  <g font-size="14">
+    <rect x="40" y="88" width="235" height="64" rx="10" fill="#04060e" fill-opacity="0.6" stroke="#94a3d8" stroke-opacity="0.2"/>
+    <line x1="58" y1="110" x2="90" y2="110" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+    <text x="100" y="115" fill="#e6eaf6">historical (ds, y)</text>
+    <line x1="58" y1="136" x2="90" y2="136" stroke="#e879f9" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 8"/>
+    <text x="100" y="141" fill="#e6eaf6">ŷ ± CI</text>
+  </g>
+</svg>
