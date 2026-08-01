@@ -657,3 +657,34 @@ img { max-width: 100%; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
 }
+
+
+/* ============ Scratch-art self-portrait (gallery-4.png) ============ */
+/* 1 — ambient hero backdrop */
+.hero-backdrop {
+  position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(640px, 60vw);
+  opacity: 0.09;
+  pointer-events: none; user-select: none; z-index: -1;
+  -webkit-mask-image: radial-gradient(closest-side, #000 42%, transparent 78%);
+  mask-image: radial-gradient(closest-side, #000 42%, transparent 78%);
+}
+.hero > .container { position: relative; z-index: 1; }
+
+/* 2 — About: crossfade foto asli -> scratch art saat hover */
+.about-photo .scratch-overlay {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; border-radius: var(--radius);
+  background: #05070d;
+  opacity: 0; transition: opacity 0.5s ease;
+}
+.about-photo:hover .scratch-overlay,
+.about-photo:focus-within .scratch-overlay { opacity: 1; }
+
+@media (max-width: 900px) {
+  .hero-backdrop { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-photo .scratch-overlay { transition: none; }
+}
