@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <radialGradient id="nglow" cx="50%" cy="8%" r="75%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="55%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="45%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b2a70"/>
+    </radialGradient>
+  </defs>
+
+  <!-- night sky -->
+  <rect width="800" height="470" fill="#0d0a1c"/>
+  <rect width="800" height="470" fill="url(#nglow)"/>
+
+  <!-- stars -->
+  <g fill="#fbbf24" font-size="14">
+    <text x="60" y="60">✦</text>
+    <text x="726" y="90" font-size="10">✧</text>
+    <text x="120" y="380" font-size="11">✧</text>
+    <text x="700" y="400">✦</text>
+    <text x="390" y="42" font-size="9" fill="#ec4899">★</text>
+    <text x="180" y="150" font-size="9" fill="#8b5cf6">✦</text>
+    <text x="660" y="210" font-size="10">✩</text>
+  </g>
+
+  <!-- title -->
+  <text x="400" y="86" text-anchor="middle" font-size="38" font-weight="800" fill="url(#title)">The Mind Reader</text>
+  <text x="400" y="112" text-anchor="middle" font-size="13" fill="#b9b2d8">Permainan tebak nama — aku baca pikiranmu lewat dua tabel ajaib</text>
+
+  <!-- step dots -->
+  <g font-size="10" fill="#837ca6" text-anchor="middle">
+    <circle cx="330" cy="140" r="11" fill="#8b5cf640" stroke="#8b5cf6"/>
+    <text x="330" y="144" fill="#c4b5fd">✓</text>
+    <circle cx="370" cy="140" r="11" fill="#8b5cf6"/>
+    <text x="370" y="144" fill="#fff" font-weight="700">2</text>
+    <circle cx="410" cy="140" r="11" fill="#1c1634" stroke="#ffffff1a"/>
+    <text x="410" y="144">3</text>
+    <circle cx="450" cy="140" r="11" fill="#1c1634" stroke="#ffffff1a"/>
+    <text x="450" y="144">4</text>
+    <circle cx="470" cy="140" r="0"/>
+  </g>
+
+  <!-- letter grid card -->
+  <rect x="150" y="168" width="500" height="252" rx="18" fill="#1c1634d9" stroke="#ffffff1a"/>
+  <text x="180" y="204" fill="#f3f0ff" font-size="16" font-weight="700">Huruf ke-<tspan fill="#fbbf24">2</tspan> ada di kolom mana?</text>
+
+  <!-- column headers -->
+  <g text-anchor="middle" font-size="13" font-weight="700">
+    <rect x="180" y="220" width="84" height="26" rx="8" fill="#8b5cf640"/>
+    <text x="222" y="238" fill="#d8ccff">1</text>
+    <rect x="272" y="220" width="84" height="26" rx="8" fill="#8b5cf6"/>
+    <text x="314" y="238" fill="#ffffff">2</text>
+    <rect x="364" y="220" width="84" height="26" rx="8" fill="#8b5cf640"/>
+    <text x="406" y="238" fill="#d8ccff">3</text>
+    <rect x="456" y="220" width="84" height="26" rx="8" fill="#8b5cf640"/>
+    <text x="498" y="238" fill="#d8ccff">4</text>
+    <rect x="548" y="220" width="72" height="26" rx="8" fill="#8b5cf640"/>
+    <text x="584" y="238" fill="#d8ccff">5</text>
+  </g>
+
+  <!-- letter tiles: highlighted column 2 -->
+  <g text-anchor="middle" font-size="14" fill="#f3f0ff">
+    <g>
+      <rect x="180" y="254" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="222" y="274">Q</text>
+      <rect x="180" y="292" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="222" y="312">M</text>
+      <rect x="180" y="330" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="222" y="350">Z</text>
+      <rect x="180" y="368" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="222" y="388">E</text>
+    </g>
+    <g>
+      <rect x="272" y="254" width="84" height="30" rx="8" fill="#8b5cf638" stroke="#8b5cf680"/><text x="314" y="274">A</text>
+      <rect x="272" y="292" width="84" height="30" rx="8" fill="#8b5cf638" stroke="#8b5cf680"/><text x="314" y="312">T</text>
+      <rect x="272" y="330" width="84" height="30" rx="8" fill="#8b5cf638" stroke="#8b5cf680"/><text x="314" y="350">K</text>
+      <rect x="272" y="368" width="84" height="30" rx="8" fill="#8b5cf638" stroke="#8b5cf680"/><text x="314" y="388">U</text>
+    </g>
+    <g>
+      <rect x="364" y="254" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="406" y="274">B</text>
+      <rect x="364" y="292" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="406" y="312">S</text>
+      <rect x="364" y="330" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="406" y="350">J</text>
+      <rect x="364" y="368" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="406" y="388">D</text>
+    </g>
+    <g>
+      <rect x="456" y="254" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="498" y="274">N</text>
+      <rect x="456" y="292" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="498" y="312">R</text>
+      <rect x="456" y="330" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="498" y="350">Y</text>
+      <rect x="456" y="368" width="84" height="30" rx="8" fill="#ffffff0c"/><text x="498" y="388">W</text>
+    </g>
+    <g>
+      <rect x="548" y="254" width="72" height="30" rx="8" fill="#ffffff0c"/><text x="584" y="274">O</text>
+      <rect x="548" y="292" width="72" height="30" rx="8" fill="#ffffff0c"/><text x="584" y="312">H</text>
+      <rect x="548" y="330" width="72" height="30" rx="8" fill="#ffffff0c"/><text x="584" y="350">C</text>
+      <rect x="548" y="368" width="72" height="30" rx="8" fill="#ffffff0c"/><text x="584" y="388">F</text>
+    </g>
+  </g>
+
+  <!-- crystal ball mascot -->
+  <circle cx="700" cy="330" r="42" fill="url(#ball)"/>
+  <ellipse cx="686" cy="314" rx="12" ry="7" fill="#ffffff55"/>
+  <rect x="672" y="368" width="56" height="12" rx="6" fill="#2a2050"/>
+  <text x="66" y="330" font-size="40">🎩</text>
+</svg>
