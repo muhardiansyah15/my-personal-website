@@ -236,4 +236,15 @@
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Hero backdrop: fixed di tengah, memudar saat scroll ---------- */
+  var backdrop = document.querySelector(".hero-backdrop");
+  if (backdrop) {
+    var fadeBackdrop = function () {
+      var fade = Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.9));
+      backdrop.style.opacity = (0.09 * fade).toFixed(3);
+    };
+    window.addEventListener("scroll", fadeBackdrop, { passive: true });
+    fadeBackdrop();
+  }
 })();
